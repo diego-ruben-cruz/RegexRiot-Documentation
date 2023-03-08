@@ -1,13 +1,12 @@
-package io.github.rk22000;
+package io.github.rk22000.RegexRiot;
 
 
 import org.junit.jupiter.api.Test;
 
-import static io.github.rk22000.Riot.riotExpression;
-import static io.github.rk22000.RiotCollections.chars;
-import static io.github.rk22000.RiotQuantifiers.number;
-import static io.github.rk22000.RiotQuantifiers.oneOrMore;
-import static io.github.rk22000.RiotTokens.*;
+import static io.github.rk22000.RegexRiot.Riot.riotExpression;
+import static io.github.rk22000.RegexRiot.SimpleRiotCollections.chars;
+import static io.github.rk22000.RegexRiot.SimpleRiotQuantifiers.oneOrMore;
+import static io.github.rk22000.RegexRiot.SimpleRiotTokens.*;
 
 class RiotTest {
 
@@ -53,16 +52,10 @@ class RiotTest {
         111-111-1111
          */
         final String REGEX = "(\\d{3}-){2}\\d{4}";
-        var riotex = number(3).times(DIGIT())
+        var riotex = DIGIT().wholeTimes(3)
                 .and("-")
                 .wholeTimes(2)
-                .and(number(4).times(DIGIT()));
-        assert riotex.toString().equals(REGEX): riotex + "!=" + REGEX;
-
-        riotex = DIGIT().times(3)
-                .and("-")
-                .wholeTimes(2)
-                .and(DIGIT().times(4));
+                .and(DIGIT().wholeTimes(4));
         assert riotex.toString().equals(REGEX): riotex + "!=" + REGEX;
     }
 

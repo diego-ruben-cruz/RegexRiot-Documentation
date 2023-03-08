@@ -1,7 +1,7 @@
-package io.github.rk22000;
+package io.github.rk22000.RegexRiot;
 
-public class RiotCollections {
-    public static RiotString charIn(String chars) {
+public class SimpleRiotCollections {
+    public static SimpleRiotString charIn(String chars) {
         return new BasicRiotString("[" + chars + "]");
     }
     public static RiotRange chars(char inclusiveStartChar) {
@@ -12,7 +12,7 @@ public class RiotCollections {
         RiotRange(char inclusiveStartChar) {
             startChar = inclusiveStartChar;
         }
-        public RiotString through(char inclusiveEndChar) {
+        public SimpleRiotString through(char inclusiveEndChar) {
             return new BasicRiotString("["+startChar+"-"+inclusiveEndChar+"]");
         }
     }

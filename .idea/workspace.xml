@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c408116-9517-43a7-a7a4-bc833152cbaa" name="Changes" comment="Initial Commit" />
+    <list default="true" id="9c408116-9517-43a7-a7a4-bc833152cbaa" name="Changes" comment="Creating branch where an extender receiving a riotstring defaults to the extender with string parameter">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/Riot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotQuantifiers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotTokens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/Riot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RiotCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RiotQuantifiers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RiotString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RiotTokens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RiotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RegexRiot/RiotTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,16 +30,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="default-riotstring-to-string" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,8 +87,8 @@
       <recent name="io.github.rk22000" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RiotTest">
-    <configuration name="RiotTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestForRiotGeneratedRegex.filmsBefore1990">
+    <configuration name="TestForRiotGeneratedRegex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -71,7 +101,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RiotTest&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -81,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RiotTest.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestForRiotGeneratedRegex.decimalNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RiotTest.create&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex.decimalNumber&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -104,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RiotTest.decimalNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestForRiotGeneratedRegex.filmsBefore1990" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RiotTest.decimalNumber&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex.filmsBefore1990&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -127,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RiotTest.filmsBefore1990" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestForRiotGeneratedRegex.nameGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RiotTest.filmsBefore1990&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex.nameGroups&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,7 +180,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RiotTest.phoneNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestForRiotGeneratedRegex.phoneNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RiotTest.phoneNumber&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex.phoneNumber&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RiotTest" />
-        <item itemvalue="Gradle.RiotTest.create" />
-        <item itemvalue="Gradle.RiotTest.phoneNumber" />
-        <item itemvalue="Gradle.RiotTest.filmsBefore1990" />
-        <item itemvalue="Gradle.RiotTest.decimalNumber" />
+        <item itemvalue="Gradle.TestForRiotGeneratedRegex.filmsBefore1990" />
+        <item itemvalue="Gradle.TestForRiotGeneratedRegex" />
+        <item itemvalue="Gradle.TestForRiotGeneratedRegex.phoneNumber" />
+        <item itemvalue="Gradle.TestForRiotGeneratedRegex.decimalNumber" />
+        <item itemvalue="Gradle.TestForRiotGeneratedRegex.nameGroups" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678238833869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating branch where an extender receiving a riotstring defaults to the extender with string parameter">
+      <created>1678239144164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678239144165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +252,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Creating branch where an extender receiving a riotstring defaults to the extender with string parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating branch where an extender receiving a riotstring defaults to the extender with string parameter" />
   </component>
 </project>
