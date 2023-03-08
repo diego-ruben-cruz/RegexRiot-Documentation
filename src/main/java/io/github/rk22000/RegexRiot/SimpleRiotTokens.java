@@ -2,7 +2,7 @@ package io.github.rk22000.RegexRiot;
 
 import static io.github.rk22000.RegexRiot.BasicRiotString.emptyBasicRiotString;
 
-public class SimpleRiotTokens {
+class SimpleRiotTokens {
     public static SimpleRiotString DIGIT() {
         return new BasicRiotString("\\d", true);
     }

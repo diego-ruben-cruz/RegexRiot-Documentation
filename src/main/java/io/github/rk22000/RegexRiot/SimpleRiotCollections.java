@@ -1,6 +1,6 @@
 package io.github.rk22000.RegexRiot;
 
-public class SimpleRiotCollections {
+class SimpleRiotCollections {
     public static SimpleRiotString charIn(String chars) {
         return new BasicRiotString("[" + chars + "]");
     }

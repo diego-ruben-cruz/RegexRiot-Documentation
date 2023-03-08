@@ -1,6 +1,6 @@
 package io.github.rk22000.RegexRiot;
 
-public class SimpleRiotQuantifiers {
+class SimpleRiotQuantifiers {
     public static SimpleRiotString oneOrNone(SimpleRiotString seed) {
         return seed.wholeThingGrouped().wholeThingOptional();
     }
