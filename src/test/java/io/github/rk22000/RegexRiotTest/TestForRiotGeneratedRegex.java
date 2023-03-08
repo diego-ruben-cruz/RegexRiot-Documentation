@@ -4,8 +4,8 @@ import io.github.rk22000.RegexRiot.RiotString;
 import org.junit.jupiter.api.Test;
 
 import static io.github.rk22000.RegexRiot.Riot.riot;
-import static io.github.rk22000.RegexRiot.RiotCollections.chars;
 import static io.github.rk22000.RegexRiot.RiotQuantifiers.oneOrMore;
+import static io.github.rk22000.RegexRiot.RiotSet.chars;
 import static io.github.rk22000.RegexRiot.RiotTokens.*;
 
 class TestForRiotGeneratedRegex {

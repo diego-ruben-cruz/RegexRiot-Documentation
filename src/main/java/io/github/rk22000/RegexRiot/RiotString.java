@@ -13,6 +13,9 @@ public interface RiotString {
     default RiotString and(RiotString extension) {
         return this.and(extension.toSimpleRiotString());
     }
+    default RiotString and(RiotSet set) {
+        return this.and(set.toRiotString());
+    }
 
     RiotString or(SimpleRiotString extension);
     default RiotString or(String extension) {
@@ -21,6 +24,7 @@ public interface RiotString {
     default RiotString or(RiotString extension) {
         return this.or(extension.toSimpleRiotString());
     }
+    RiotString wholeTimes(int atleast, int atmost);
     RiotString wholeTimes(int repeatCount);
 
     RiotString wholeThingOptional();
@@ -35,6 +39,7 @@ public interface RiotString {
         return !isUnitChain();
     }
     Pattern compiledPattern();
+    RiotString times(int atleast, int atmost);
     RiotString times(int repeatCount);
     RiotString optionally();
     RiotString grouped();
@@ -86,6 +91,11 @@ class ChildRiotString implements RiotString {
     }
 
     @Override
+    public RiotString wholeTimes(int atleast, int atmost) {
+        return new ChildRiotString(toSimpleRiotString().wholeTimes(atleast, atmost));
+    }
+
+    @Override
     public RiotString wholeTimes(int repeatCount) {
         return new ChildRiotString(mother.apply(father).wholeTimes(repeatCount));
     }
@@ -113,6 +123,14 @@ class ChildRiotString implements RiotString {
     @Override
     public Pattern compiledPattern() {
         return mother.apply(father).compiledPattern();
+    }
+
+    @Override
+    public RiotString times(int atleast, int atmost) {
+        return new ChildRiotString(
+                mother,
+                father.wholeTimes(atleast, atmost)
+        );
     }
 
     @Override

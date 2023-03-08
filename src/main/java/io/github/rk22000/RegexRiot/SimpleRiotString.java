@@ -18,11 +18,12 @@ public interface SimpleRiotString {
         return this.or(riotStringFrom(extension));
     }
 //    RiotString times(int repeatCount);
+    SimpleRiotString wholeTimes(int atleast, int atmost);
     SimpleRiotString wholeTimes(int repeatCount);
 
-//    RiotString optional();
     SimpleRiotString wholeThingOptional();
 
+    SimpleRiotString wholeThingSetified();
     SimpleRiotString wholeThingGrouped();
     SimpleRiotString wholeThingGroupedAs(String name);
     default SimpleRiotString as(String name) {
@@ -86,6 +87,15 @@ class BasicRiotString implements SimpleRiotString {
                 false
         );
     }
+
+    @Override
+    public SimpleRiotString wholeThingSetified() {
+        return new BasicRiotString(
+                "[" + string + "]",
+                true
+        );
+    }
+
     @Override
     public SimpleRiotString wholeThingGrouped() {
         return new BasicRiotString(
@@ -106,6 +116,19 @@ class BasicRiotString implements SimpleRiotString {
             unitExpression = wholeThingGrouped();
         return unitExpression;
     }
+
+    @Override
+    public SimpleRiotString wholeTimes(int atleast, int atmost) {
+        var most = String.valueOf(atmost);
+        if(atmost == -1) {
+            most = "";
+        }
+        return new BasicRiotString(
+                groupIfNotUnit() + "{" + atleast + "," + most + "}",
+                true
+        );
+    }
+
     @Override
     public SimpleRiotString wholeTimes(int repeatCount) {
         return new BasicRiotString(

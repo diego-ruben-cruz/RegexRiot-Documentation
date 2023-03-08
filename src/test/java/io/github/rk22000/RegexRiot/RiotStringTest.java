@@ -35,7 +35,14 @@ class RiotStringTest {
     void or() {
         riotex = DIGIT.or(WORD_CHAR);
         System.out.println(riotex);
-        result = "(\\d|\\w)";
+        result = "\\d|\\w";
+        check();
+    }
+    @Test
+    void wholeTimesRanged() {
+        riotex = DIGIT.or(WORD_CHAR).wholeTimes(1, 2);
+        result = "(\\d|\\w){1,2}";
+        System.out.println(riotex);
         check();
     }
 

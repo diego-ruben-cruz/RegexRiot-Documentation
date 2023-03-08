@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c408116-9517-43a7-a7a4-bc833152cbaa" name="Changes" comment="Developed a solid initial version&#10;I guess next step should be to document this work :(">
+    <list default="true" id="9c408116-9517-43a7-a7a4-bc833152cbaa" name="Changes" comment="package privating SimpleRiot stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/RiotCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/RiotCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/RiotString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/RiotString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rk22000/RegexRiot/SimpleRiotString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RegexRiot/RiotStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RegexRiot/RiotStringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RegexRiotTest/TestForRiotGeneratedRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/rk22000/RegexRiotTest/TestForRiotGeneratedRegex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,8 +79,8 @@
       <recent name="io.github.rk22000" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestOnRegexTutorials.filmsBefore1990">
-    <configuration name="TestForRiotGeneratedRegex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestOnRegexTutorials">
+    <configuration name="RiotStringTest.or" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +93,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiot.RiotStringTest.or&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -98,7 +103,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestForRiotGeneratedRegex.filmsBefore1990" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RiotStringTest.wholeTimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RegexRiotTest.TestForRiotGeneratedRegex.filmsBefore1990&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiot.RiotStringTest.wholeTimes&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +126,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestOnRegexTutorials.FloatingPointNumbers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RiotStringTest.wholeTimesRanged" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RegexRiotTest.TestOnRegexTutorials.FloatingPointNumbers&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiot.RiotStringTest.wholeTimesRanged&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +149,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestOnRegexTutorials.filmsBefore1990" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestOnRegexTutorials" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RegexRiotTest.TestOnRegexTutorials.filmsBefore1990&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestOnRegexTutorials&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +172,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestOnRegexTutorials.hexadecimalColors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestOnRegexTutorials.greyScaleColors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.github.rk22000.RegexRiotTest.TestOnRegexTutorials.hexadecimalColors&quot;" />
+            <option value="&quot;io.github.rk22000.RegexRiotTest.TestOnRegexTutorials.greyScaleColors&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestOnRegexTutorials.filmsBefore1990" />
-        <item itemvalue="Gradle.TestOnRegexTutorials.hexadecimalColors" />
-        <item itemvalue="Gradle.TestOnRegexTutorials.FloatingPointNumbers" />
-        <item itemvalue="Gradle.TestForRiotGeneratedRegex.filmsBefore1990" />
-        <item itemvalue="Gradle.TestForRiotGeneratedRegex" />
+        <item itemvalue="Gradle.TestOnRegexTutorials" />
+        <item itemvalue="Gradle.TestOnRegexTutorials.greyScaleColors" />
+        <item itemvalue="Gradle.RiotStringTest.wholeTimesRanged" />
+        <item itemvalue="Gradle.RiotStringTest.wholeTimes" />
+        <item itemvalue="Gradle.RiotStringTest.or" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678270178003</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="package privating SimpleRiot stuff">
+      <created>1678307294582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678307294582</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +260,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Creating branch where an extender receiving a riotstring defaults to the extender with string parameter" />
     <MESSAGE value="Developed a solid initial version&#10;I guess next step should be to document this work :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developed a solid initial version&#10;I guess next step should be to document this work :(" />
+    <MESSAGE value="package privating SimpleRiot stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="package privating SimpleRiot stuff" />
   </component>
 </project>
