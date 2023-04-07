@@ -44,7 +44,7 @@ Breakdown:
 ```js
 / // Beginning of js regex
 \d+\s // Denotes the "## " as per example values
-(\w+\s|\w+\W\s)+ // Denotes the alphanumeric characters of the tile, including punctuation such as ":,"
+(\w+\s|\w+\W\s)+ // Denotes the alphanumeric characters of the film title, including punctuation such as ":,"
 \( // Denotes the character "("
     // The following is a bunch of OR conditions defining the acceptable boundaries for the
     ([0-9]| // Defines numrange 0-9 as acceptable
