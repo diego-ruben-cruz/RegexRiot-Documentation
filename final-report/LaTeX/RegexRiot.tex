@@ -334,12 +334,12 @@ ritex = riot("Bugs").then(" Bunny")
 \end{lstlisting}
 
 To assign an alias to \\
-\texttt{Bugs Bunny}, we shall use \texttt{.as(String name)}
+\texttt{Bugs Bunny}, we shall use \texttt{.wholeAs(String name)}
 to mark it with the tag \texttt{name01} like so:
 
 \begin{lstlisting}[language=Java]
 ritex = riot("Bugs")
-    .then(" Bunny").as("name01")
+    .then(" Bunny").wholeAs("name01")
 \end{lstlisting}
 
 Now that we have made the first name, we must make use of the
@@ -348,7 +348,7 @@ portion of the regex, like so:
 
 \begin{lstlisting}[language=Java]
 ritex = riot("Bugs")
-    .then(" Bunny").as("name01")
+    .then(" Bunny").wholeAs("name01")
     .or(riot("Daffy"))
 \end{lstlisting}
 
@@ -360,7 +360,7 @@ occur twice, like so:
 
 \begin{lstlisting}[language=Java]
 ritex = riot("Bugs")
-    .then(" Bunny").as("name01")
+    .then(" Bunny").wholeAs("name01")
     .or(riot("Daffy").times(2))
 \end{lstlisting}
 
@@ -369,7 +369,7 @@ to the regex associated with \texttt{DaffyDaffy}.
 
 \begin{lstlisting}[language=Java]
 ritex = riot("Bugs")
-    .then(" Bunny").as("name01")
+    .then(" Bunny").wholeAs("name01")
     .or(riot("Daffy").times(2)
         .as("name02"));
 \end{lstlisting}
@@ -382,7 +382,7 @@ greater clarification when building more complicated regex.
 \begin{lstlisting}[language=Java]
 answer = "(?<name01>Bugs Bunny)|(?<name02>(Daffy){2})"; // What RegexRiot would generate
 ritex = riot("Bugs").
-    then(" Bunny").as("name01")
+    then(" Bunny").wholeAs("name01")
     .or(riot("Daffy").times(2)
         .as("name02")
     );
